@@ -1,1185 +1,298 @@
-<!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hyman">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hyman">
-<meta property="og:locale" content="default">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hyman">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/">
-
-
-
-
-
-  <title>Hyman</title>
-  
-
-
-
-
-
-
-
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="generator" content="Movable Type 5.2.2"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- <link rel="stylesheet" href="css/styles.css" type="text/css"/> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="Blog/assets/favicon.ico" /> -->
+    <title>Hyman的个人网站</title>
+
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: 50% 50%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://raw.githubusercontent.com/hyman213/FigureBed/master/pub/blog-bgimg.jpg);
+            -webkit-transition: All 2s ease;
+            -moz-transition: All 2s ease;
+            -o-transition: All 2s ease;
+            -ms-transition: All 2s ease;
+            transition: All 2s ease;
+        }
+
+        body.one-column #container {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 1.1em;
+            color: #fefefe;
+
+            overflow: auto;
+            position: absolute;
+
+            left: 50%;
+            top: 40%;
+            width: auto;
+            height: auto;
+            max-height: 80%;
+            min-width: 90%;
+
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            transition: height 1s ease;
+            transition: top 1s ease;
+        }
+
+        body.one-column #container p,
+        body.one-column #container a {
+            text-decoration: none;
+            color: #fefefe;
+            text-shadow: 0 1px 1px #333
+        }
+
+        body.one-column #container a:hover {
+            color: #868686;
+            text-decoration: underline;
+        }
+
+        body.one-column #page-alpha p:hover,
+        body.one-column #footer-content a:hover {
+            background-color: #fefefe;
+            color: #222;
+        }
+
+        body.one-column #footer-content a:hover {
+            padding: 0.25rem;
+            border-radius: 0.5em;
+        }
+
+        body.one-column #page-alpha p:hover a {
+            color: #222;
+        }
+
+        body.one-column #page-alpha p {
+            margin-right: 25px;
+            margin-left: 25px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.3rem;
+            border-radius: 0.4em;
+            text-shadow: 0 1px 1px #333;
+        }
+
+        body.one-column #header {
+            margin-top: 25px;
+            /* height: 7rem; */
+            display: relative;
+            padding-bottom: 1em;
+        }
+
+        body.one-column #container h1 {
+            font-size: 1.4rem;
+            line-height: 90%;
+            color: #fefefe;
+            float: none;
+            margin: auto;
+            padding-top: 0.4rem;
+            text-align: center;
+            font-weight: bolder;
+            text-shadow: 0 1px 1px #333;
+        }
+
+        body.one-column #header-content:hover h1 {
+            text-decoration: underline;
+        }
+
+        body.one-column #header-content h1:hover {
+            cursor: pointer;
+        }
+
+        body.one-column #header-content p {
+            text-align: center;
+        }
+
+        body.one-column #header-content {
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+
+        @media (min-width: 641px) and (max-width: 770px) {
+            body.one-column #container {
+                min-width: 70%;
+            }
+        }
+
+        @media (min-width: 771px) {
+            body.one-column #container {
+                min-width: 40%;
+            }
+        }
+
+        #up-arrow {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 21px;
+            height: 21px;
+            background-image: url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==);
+            background-color: #fefefe;
+            border-radius: 100%;
+            cursor: n-resize;
+        }
+
+        body.one-column #container.folded {
+            top: 15px;
+            margin-top: 5px;
+            height: 27px;
+            overflow: hidden;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <style>
+        body.one-column #container {
+            background-color: #f5f5d5;
+            color: #111111;
+            display: absolute;
+            width: 50em;
+            margin: 10% auto;
+            min-width: 0;
+            top: 10%;
+            left: 25%;
+            overflow: hidden;
+        }
+
+        body.one-column #container h1,
+        body.one-column #container p,
+        body.one-column #container a {
+            color: #111111;
+        }
+    </style>
+    <![endif]-->
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+<body id="classic-website" class="mt-main-index one-column">
+<div id="container">
+    <div id="container-inner">
 
-  
-  
-    
-  
+        <div id="header">
+            <div id="header-inner">
+                <div id="header-content">
+                    <h1>Hyman的个人网站</h1>
+                </div>
+            </div>
+        </div>
 
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+        <div id="content">
+            <div id="content-inner">
 
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hyman</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+
+                <div id="alpha">
+                    <div id="alpha-inner">
+                        <div id="page-alpha" style="margin-bottom:2em;">
+                            <p>» <a href="Blog/" target="_self">我的博客 (Blog)</a></p>
+                            <!--<p>» <a href="about.html">About</a></p>-->
+                        </div>
+                        <div id="up-arrow">
+                        </div>
+                        
+                        <div id="page-beta">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="beta">
+                    <div id="beta-inner">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div id="footer-inner">
+                <div id="footer-content">
+                    <p></p>
+                </div>
+            </div>
+        </div>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
 </div>
+<script>
+    // var pub_img_current_image;
+
+    // function backgroundImage() {
+    //     var pub_img_path = 'https://raw.githubusercontent.com/nnngu/FigureBed/master/images_pub/';
+
+    //     var pub_img_num = 21;
+
+    //     var pub_img_current_no = function () {
+    //         return Math.floor(Math.random() * pub_img_num + 1);
+    //     };
+
+    //     var pub_img_url = function () {
+    //         return pub_img_path + 'pub_' + pub_img_current_no() + '.jpg';
+    //     };
+
+    //     if (pub_img_current_image === undefined) pub_img_current_image = pub_img_url();
+
+    //     if ('querySelector' in document) {
+    //         var body = document.querySelector('body').style;
+    //     } else {
+    //         var body = document.body.style;
+    //     }
+    //     body.backgroundSize = 'cover';
+    //     body.backgroundRepeat = 'no-repeat';
+    //     body.backgroundImage = 'url(' + pub_img_current_image + ')';
+
+    //     var span = document.getElementById('img_placer');
+    //     span.innerHTML = '<span style="background-image: url(' + (pub_img_current_image = pub_img_url()) + ');width: 0px;height: 0px;display: inline;"></span>';
+    // }
+
+    // backgroundImage();
+
+    var up = document.getElementById('up-arrow');
+    var upStatus = 0;
+
+    up.addEventListener('click', function () {
+        if (upStatus === 0) {
+            var container = document.getElementById('container');
+            container.setAttribute('class', 'folded');
+            up.style.backgroundImage = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAYAAAARfGZ1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHZSURBVEiJ7ZQ/ixpRFMXPeY6za7IEbbS1EGysUk0TkFjkI1imShFIioVASJsqW2wT8gW2TSsypBCLBLExEBgQ2cxodDdYKBhHDZv5c1Ooi4juGsIWCXvhNo97fu+++857FBHcVKgbI9/C/z84ROQyAahMJnMvn88fAIgB2AegA4guMrJoiAC4qt2UXPU5yT3DMB6l0+kHmqYpEQkWDTAMw8u6MAxJEiIiSikEQRAdjUY/Go3G8XA4HC/rtLVTXBiG0dR1/XkqlXqo6/rPMAw535cQES67XqxRRCKz2cydTqdPVsHAhpnX6/XTyWTy0nXdLyTvRiKRO0qpGMkYyX0AeyR1klEAmud5F7ZtvyiXy+/XWdz2/AuFwv1sNnsSj8dzMi8iyXBxQkUSnuf5rVbrValUOpYNoK1uqVQqn9vt9tPxePxVKbUcC0SESin4vh82m80jx3HebgJfCQcA0zQ/2bb9zHXdbyRBUiml6Pt+4DjOu06n88ayrF/b9Nf63DTND91u99B13e+apsHzPHEc56TX6722LGtylXbrzNejWCw+TiaTR4PB4GO/3z+sVqtn12l2hudyuYNEImEEQdCs1Wrnu2h2hgNzu2y7vL+G/2n8u7/iLXxj/AYhQQQGkT/xPgAAAABJRU5ErkJggg==)';
+            up.style.cursor = 's-resize';
+        } else {
+            var container = document.getElementById('container');
+            container.removeAttribute('class');
+            up.style.backgroundImage = 'url(data:image/gif;base64,R0lGODlhFgAVALMAAGNkZuLi44CBg5SVlru8vPb29tjZ2aioqW1ucIqLjOrq6sXFxgAAAAAAAAAAAAAAACH5BAAHAP8ALAAAAAAWABUAAARBUMlJq7046837LYVnJYlIEQBAmEqQpoEpvIAgHnR6dEb+GpsCwpdChDID4muQWShpi8+ARBUIqKTBkcXter9gUwQAOw==)';
+            up.style.cursor = 'n-resize';
+        }
+        upStatus = ~upStatus;
+    });
 
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-首页">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-归档">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-分类">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-标签">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-关于">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
-            
-            关于
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/17/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hyman Hu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hyman">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/17/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-17T21:29:15+08:00">
-                2019-02-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/17/玩转Spring之一-初识Spring/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hyman Hu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hyman">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/17/玩转Spring之一-初识Spring/" itemprop="url">玩转Spring之一: 初识Spring</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-17T00:11:17+08:00">
-                2019-02-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/玩转Spring/" itemprop="url" rel="index">
-                    <span itemprop="name">玩转Spring</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="一、初识Spring"><a href="#一、初识Spring" class="headerlink" title="一、初识Spring"></a>一、初识Spring</h2><p>诞生于2002年，成型于2003年，最早作者Rod Johnson。<br>目前已发展到Spring 5.x版本, 支持JDK8-11</p>
-<h3 id="1-Spring始于框架，但不限于框架"><a href="#1-Spring始于框架，但不限于框架" class="headerlink" title="1.Spring始于框架，但不限于框架"></a>1.Spring始于框架，但不限于框架</h3><p><a href="http://spring.io/projects" target="_blank" rel="noopener">Spring 主要项目</a></p>
-<p><img src="/2019/02/17/玩转Spring之一-初识Spring/Spring0101.png" alt="image"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/15/个人博客操作笔记/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hyman Hu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hyman">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/15/个人博客操作笔记/" itemprop="url">个人博客操作笔记</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-15T22:47:32+08:00">
-                2019-02-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/博客操作/" itemprop="url" rel="index">
-                    <span itemprop="name">博客操作</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">$ hexo n &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<h2 id="部署到服务器"><a href="#部署到服务器" class="headerlink" title="部署到服务器"></a>部署到服务器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<h2 id="清除缓存文件-db-json-和已生成的静态文件-public"><a href="#清除缓存文件-db-json-和已生成的静态文件-public" class="headerlink" title="清除缓存文件 (db.json) 和已生成的静态文件 (public)"></a>清除缓存文件 (db.json) 和已生成的静态文件 (public)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-<h2 id="列出网站资料"><a href="#列出网站资料" class="headerlink" title="列出网站资料"></a>列出网站资料</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo list &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="显示hexo版本"><a href="#显示hexo版本" class="headerlink" title="显示hexo版本"></a>显示hexo版本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo version</span><br></pre></td></tr></table></figure>
-<h2 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo draft</span><br></pre></td></tr></table></figure>
-<h1 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h1><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>文章布局layout，默认post，可以通过修改_config.yml中的<code>default_layout</code>来指定默认布局<br>Hexo有三种默认布局: post(source/<em>posts</em>), page(source), draft(source/<em>draft</em>)。 自定义的布局，存储到_post文件夹中</p>
-<h3 id="文件名"><a href="#文件名" class="headerlink" title="文件名"></a>文件名</h3><p>Hexo 默认以标题做为文件名称。可修改_config.yml中<code>new_post_name</code>修改文件名，如：<code>:year-:month-:day-:title.md</code></p>
-<h3 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h3><p>发布草稿命令<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
-<h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><p>使用模板命令<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> photo &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
-<p>在执行这行指令时，Hexo 会尝试在 scaffolds 文件夹中寻找 photo.md</p>
-<h2 id="文章头文件格式"><a href="#文章头文件格式" class="headerlink" title="文章头文件格式"></a>文章头文件格式</h2><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">描述</th>
-<th style="text-align:center">默认值</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">layout</td>
-<td style="text-align:center">布局</td>
-<td style="text-align:center">post</td>
-</tr>
-<tr>
-<td style="text-align:center">title</td>
-<td style="text-align:center">标题</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">date</td>
-<td style="text-align:center">建立日期</td>
-<td style="text-align:center">文件建立日期</td>
-</tr>
-<tr>
-<td style="text-align:center">updated</td>
-<td style="text-align:center">更新日期</td>
-<td style="text-align:center">文件更新日期</td>
-</tr>
-<tr>
-<td style="text-align:center">comments</td>
-<td style="text-align:center">开启文章评论功能</td>
-<td style="text-align:center">true</td>
-</tr>
-<tr>
-<td style="text-align:center">tags</td>
-<td style="text-align:center">标签</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">category</td>
-<td style="text-align:center">分类</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">permalink</td>
-<td style="text-align:center">覆盖文章网址</td>
-</tr>
-</tbody>
-</table>
-<p>注：分类具有顺序性和层次性；而标签没有顺序和层次。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">- Diary</span><br><span class="line">- Life</span><br></pre></td></tr></table></figure>
-<p>会使分类Life成为Diary的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。</p>
-<h2 id="插入引用"><a href="#插入引用" class="headerlink" title="插入引用"></a><a href="https://hexo.io/zh-cn/docs/tag-plugins" target="_blank" rel="noopener">插入引用</a></h2><h3 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h3><p>语法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote [author[, <span class="built_in">source</span>]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>语法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</span><br><span class="line">code snippet</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure></p>
-<p>另一种形式的代码块，不同的是它使用三个反引号来包裹。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">``` [language] [title] [url] [link text] code snippet</span><br></pre></td></tr></table></figure>
-<h1 id="Category创建步骤"><a href="#Category创建步骤" class="headerlink" title="Category创建步骤"></a>Category创建步骤</h1><h2 id="新建一个页面，命名为categories"><a href="#新建一个页面，命名为categories" class="headerlink" title="新建一个页面，命名为categories"></a>新建一个页面，命名为categories</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> page categories</span><br></pre></td></tr></table></figure>
-<p>这时在source目录下会生成一个名为categories的文件夹, 在该文件夹下有一个名为index.md的文件</p>
-<h2 id="编辑categories文件夹下的index-md"><a href="#编辑categories文件夹下的index-md" class="headerlink" title="编辑categories文件夹下的index.md"></a>编辑categories文件夹下的index.md</h2><p>将页面的类型设置为 categories ，主题将自动为这个页面显示所有分类</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 分类</span><br><span class="line">date: <span class="number">2019</span><span class="number">-02</span><span class="number">-15</span> <span class="number">22</span>:<span class="number">10</span>:<span class="number">42</span></span><br><span class="line">type: <span class="string">"categories"</span></span><br><span class="line">comments: <span class="literal">false</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>注意：如果有启用多说 或者 Disqus 评论，默认页面也会带有评论。需要关闭的话，请添加字段 comments 并将值设置为 false</p>
-<h2 id="在菜单中添加链接-编辑主题的-config-yml"><a href="#在菜单中添加链接-编辑主题的-config-yml" class="headerlink" title="在菜单中添加链接, 编辑主题的 _config.yml"></a>在菜单中添加链接, 编辑主题的 _config.yml</h2><p>将 menu 中的 categories: /categories 注释去掉，如下:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  首页: <span class="regexp">/ || home</span></span><br><span class="line"><span class="regexp">  归档: /</span>archives/ || archive</span><br><span class="line">  分类: <span class="regexp">/categories/</span> || th</span><br><span class="line">  标签: <span class="regexp">/tags/</span> || tags</span><br><span class="line">  关于: <span class="regexp">/about/</span> || user</span><br></pre></td></tr></table></figure>
-<p>在文章中加入<code>category: &quot;博客操作&quot;</code>即可自动添加到分类。如下所示</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 个人博客操作笔记</span><br><span class="line">author: Hyman Hu</span><br><span class="line">category: <span class="string">"博客操作"</span></span><br><span class="line">tags: <span class="string">"Hexo"</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h1 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h1><h2 id="设置站点配置-config-yml"><a href="#设置站点配置-config-yml" class="headerlink" title="设置站点配置_config.yml"></a>设置站点配置_config.yml</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image -- save</span><br></pre></td></tr></table></figure>
-<p>下次新建文章时，除了生成.md文件外还生成一个同名文件<br>添加图片时使用markdown语法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![image](path)</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/14/码之外的生存指南/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hyman Hu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hyman">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/14/码之外的生存指南/" itemprop="url">代码之外的生存指南</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-14T23:04:18+08:00">
-                2019-02-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/读书笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">读书笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>本书分了 7 大章节：</p>
-<ul>
-<li>职业 Career</li>
-<li>自我营销 Marketing Yourself</li>
-<li>学习怎样学习：如何自我教育 Learning</li>
-<li>生产力 Productivity</li>
-<li>理财 Finance</li>
-<li>健身 Fitness</li>
-<li>精神 Spirit</li>
-</ul>
-<h2 id="一、职业"><a href="#一、职业" class="headerlink" title="一、职业"></a>一、职业</h2><p>工作是属于公司的，而职业生涯却是属于你自己的。</p>
-<h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Hyman Hu</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives">
-              
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">categories</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Hyman Hu</span>
-
-  
-</div>
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
 </script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
+</div>
 </body>
 </html>
